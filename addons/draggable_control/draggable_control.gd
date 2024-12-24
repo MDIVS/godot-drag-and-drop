@@ -1,3 +1,5 @@
+@icon("res://addons/draggable_control/icon.png")
+
 extends Control
 
 ## Draggable item like a button
