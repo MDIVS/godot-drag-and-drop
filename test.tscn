@@ -1,0 +1,64 @@
+[gd_scene load_steps=3 format=3 uid="uid://blbqlp2h4nnun"]
+
+[ext_resource type="Script" path="res://addons/draggable_control_node/draggable.gd" id="1_cm2n7"]
+[ext_resource type="Texture2D" uid="uid://cyxa1ksuhsutf" path="res://icon.svg" id="2_t828g"]
+
+[node name="Test" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 152.0
+offset_top = 216.0
+offset_right = 427.0
+offset_bottom = 469.0
+script = ExtResource("1_cm2n7")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 353.0
+offset_top = 152.0
+offset_right = 553.0
+offset_bottom = 352.0
+color = Color(0, 0.658824, 1, 1)
+script = ExtResource("1_cm2n7")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 103.0
+offset_top = 383.0
+offset_right = 231.0
+offset_bottom = 511.0
+texture = ExtResource("2_t828g")
+script = ExtResource("1_cm2n7")
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 617.0
+offset_top = 191.0
+offset_right = 892.0
+offset_bottom = 444.0
+script = ExtResource("1_cm2n7")
+drop_to_origin = true
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+offset_left = 818.0
+offset_top = 127.0
+offset_right = 1018.0
+offset_bottom = 327.0
+color = Color(0, 0.658824, 1, 1)
+script = ExtResource("1_cm2n7")
+drop_to_origin = true
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+offset_left = 568.0
+offset_top = 358.0
+offset_right = 696.0
+offset_bottom = 486.0
+texture = ExtResource("2_t828g")
+script = ExtResource("1_cm2n7")
+drop_to_origin = true
