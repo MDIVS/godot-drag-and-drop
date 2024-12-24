@@ -9,8 +9,8 @@ signal dragged
 ## Emmited right after dragging ends
 signal dropped
 
-## When selected, dropping will always make the node travel back to its last position before dragging
-@export var drop_to_origin:bool
+## When true, the node will return to its last position before dragging.
+@export var drop_to_origin:bool = true
 
 ## Last position before dragging
 var position_before_dragging:Vector2

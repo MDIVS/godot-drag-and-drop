@@ -45,7 +45,7 @@ A lightweight, reusable Godot script for creating draggable UI elements with eas
 
 - **`drop_to_origin : bool`**
   - When `true`, the node will return to its last position before dragging.
-  - Default: `false`
+  - Default: `true`
 
 - **`dragging : bool`** (read-only)
   - Indicates whether the node is currently being dragged.
@@ -55,11 +55,8 @@ A lightweight, reusable Godot script for creating draggable UI elements with eas
 
 ### Signals
 
-- **`dragged`**
-  - Emitted when dragging starts.
-
-- **`dropped`**
-  - Emitted when dragging ends.
+- **`dragged`**: Emitted when dragging starts.
+- **`dropped`**: Emitted when dragging ends.
 
 ## Example
 
@@ -69,17 +66,21 @@ Here's a simple example of how to use the Draggable Control:
 extends Control
 
 func _ready():
-    var draggable = preload("res://draggable_control.gd").new()
-    draggable.drop_to_origin = true
-    draggable.dragged.connect(on_dragged)
-    draggable.dropped.connect(on_dropped)
-    add_child(draggable)
+	var draggable = DraggableControl.new()
+	draggable.drop_to_origin = false
+	draggable.dragged.connect(on_dragged)
+	draggable.dropped.connect(on_dropped)
+	add_child(draggable)
+	
+	var icon = TextureRect.new()
+	icon.texture = load("res://icon.svg")
+	draggable.add_child(icon)
 
 func on_dragged():
-    print("Node is being dragged!")
+	print("Node is being dragged!")
 
 func on_dropped():
-    print("Node was dropped!")
+	print("Node was dropped!")
 ```
 
 ## License
