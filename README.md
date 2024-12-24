@@ -4,6 +4,10 @@ A lightweight, reusable Godot script for creating draggable UI elements with eas
 
 _Made with [Godot Engine](https://godotengine.org) v4.3_
 
+## Demo Preview
+Enjoy a demo where you can create your Kenney Monster as you want by dragging the monster parts to it.
+![Preview Image](./preview.png)
+
 ## Features
 
 - **Drag-and-Drop Support:** Easily add drag-and-drop behavior to `Control` nodes.

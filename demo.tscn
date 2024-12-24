@@ -1,0 +1,198 @@
+[gd_scene load_steps=16 format=3 uid="uid://bloqe2l5u4oke"]
+
+[ext_resource type="Texture2D" uid="uid://ckkj0by3djmpg" path="res://kenney_monster-builder-pack/body_yellowF.png" id="1_pbr5n"]
+[ext_resource type="Script" path="res://addons/draggable_control/draggable_control.gd" id="2_3j8al"]
+[ext_resource type="Texture2D" uid="uid://fx8blkhmooer" path="res://kenney_monster-builder-pack/body_darkC.png" id="3_aiycg"]
+[ext_resource type="Texture2D" uid="uid://dwka0nul2prct" path="res://kenney_monster-builder-pack/detail_blue_antenna_small.png" id="4_ju6sq"]
+[ext_resource type="Texture2D" uid="uid://0wcb2t6imf5q" path="res://kenney_monster-builder-pack/detail_dark_ear.png" id="5_58u8c"]
+[ext_resource type="Texture2D" uid="uid://dlboppr1ie4df" path="res://kenney_monster-builder-pack/detail_red_horn_small.png" id="6_ivuxd"]
+[ext_resource type="Texture2D" uid="uid://fhwclwk4f8xy" path="res://kenney_monster-builder-pack/eye_cute_light.png" id="7_a1nwt"]
+[ext_resource type="Texture2D" uid="uid://bnb1rsotl8ljq" path="res://kenney_monster-builder-pack/eye_red.png" id="8_a5l0h"]
+[ext_resource type="Texture2D" uid="uid://cp434w7e8xjyx" path="res://kenney_monster-builder-pack/eye_yellow.png" id="9_alvu6"]
+[ext_resource type="Texture2D" uid="uid://ckbonffqutyyn" path="res://kenney_monster-builder-pack/mouthB.png" id="10_dlr05"]
+[ext_resource type="Texture2D" uid="uid://8mxojqe8ekf3" path="res://kenney_monster-builder-pack/mouthI.png" id="11_m4ekd"]
+[ext_resource type="Texture2D" uid="uid://dd0pbqclyk5ou" path="res://kenney_monster-builder-pack/mouth_closed_teeth.png" id="12_lun22"]
+[ext_resource type="Texture2D" uid="uid://c4b708hctu8oa" path="res://kenney_monster-builder-pack/nose_brown.png" id="13_sigg8"]
+[ext_resource type="Texture2D" uid="uid://dgwhgahk1ptxk" path="res://kenney_monster-builder-pack/nose_red.png" id="14_4wokj"]
+[ext_resource type="Texture2D" uid="uid://bhng78vgkic5p" path="res://kenney_monster-builder-pack/nose_yellow.png" id="15_yr2cx"]
+
+[node name="MonsterBuilder" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1152.0
+offset_bottom = -648.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="YellowBody" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 297.0
+offset_top = 218.0
+offset_right = 467.0
+offset_bottom = 454.0
+texture = ExtResource("1_pbr5n")
+script = ExtResource("2_3j8al")
+
+[node name="BrownBody" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 708.0
+offset_top = 230.0
+offset_right = 849.0
+offset_bottom = 424.0
+texture = ExtResource("3_aiycg")
+script = ExtResource("2_3j8al")
+
+[node name="AntennaR" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 150.0
+offset_top = 74.0
+offset_right = 176.0
+offset_bottom = 116.0
+texture = ExtResource("4_ju6sq")
+script = ExtResource("2_3j8al")
+drop_to_origin = false
+
+[node name="AntennaL" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 150.0
+offset_top = 74.0
+offset_right = 176.0
+offset_bottom = 116.0
+scale = Vector2(-1, 1)
+texture = ExtResource("4_ju6sq")
+script = ExtResource("2_3j8al")
+drop_to_origin = false
+
+[node name="EarR" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 97.0
+offset_top = 83.0
+offset_right = 135.0
+offset_bottom = 127.0
+texture = ExtResource("5_58u8c")
+script = ExtResource("2_3j8al")
+drop_to_origin = false
+
+[node name="EarL" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 97.0
+offset_top = 83.0
+offset_right = 135.0
+offset_bottom = 127.0
+scale = Vector2(-1, 1)
+texture = ExtResource("5_58u8c")
+script = ExtResource("2_3j8al")
+drop_to_origin = false
+
+[node name="HornR" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 142.0
+offset_top = 115.0
+offset_right = 182.0
+offset_bottom = 157.0
+texture = ExtResource("6_ivuxd")
+script = ExtResource("2_3j8al")
+drop_to_origin = false
+
+[node name="HornL" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 142.0
+offset_top = 115.0
+offset_right = 182.0
+offset_bottom = 157.0
+scale = Vector2(-1, 1)
+texture = ExtResource("6_ivuxd")
+script = ExtResource("2_3j8al")
+drop_to_origin = false
+
+[node name="EyeBrown" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 778.0
+offset_top = 11.0
+offset_right = 842.0
+offset_bottom = 80.0
+texture = ExtResource("7_a1nwt")
+script = ExtResource("2_3j8al")
+drop_to_origin = false
+
+[node name="EyeRed" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 925.0
+offset_top = 14.0
+offset_right = 989.0
+offset_bottom = 72.0
+texture = ExtResource("8_a5l0h")
+script = ExtResource("2_3j8al")
+drop_to_origin = false
+
+[node name="EyeYellow" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 854.0
+offset_top = 7.0
+offset_right = 918.0
+offset_bottom = 76.0
+texture = ExtResource("9_alvu6")
+script = ExtResource("2_3j8al")
+drop_to_origin = false
+
+[node name="Mouth1" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 600.0
+offset_top = 33.0
+offset_right = 670.0
+offset_bottom = 67.0
+texture = ExtResource("10_dlr05")
+script = ExtResource("2_3j8al")
+drop_to_origin = false
+
+[node name="Mouth2" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 504.0
+offset_top = 20.0
+offset_right = 578.0
+offset_bottom = 62.0
+texture = ExtResource("11_m4ekd")
+script = ExtResource("2_3j8al")
+drop_to_origin = false
+
+[node name="Mouth3" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 682.0
+offset_top = 33.0
+offset_right = 748.0
+offset_bottom = 59.0
+texture = ExtResource("12_lun22")
+script = ExtResource("2_3j8al")
+drop_to_origin = false
+
+[node name="NoseBrown" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 400.0
+offset_top = 30.0
+offset_right = 454.0
+offset_bottom = 78.0
+texture = ExtResource("13_sigg8")
+script = ExtResource("2_3j8al")
+drop_to_origin = false
+
+[node name="NoseRed" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 345.0
+offset_top = 28.0
+offset_right = 392.0
+offset_bottom = 79.0
+texture = ExtResource("14_4wokj")
+script = ExtResource("2_3j8al")
+drop_to_origin = false
+
+[node name="NoseYellow" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 289.0
+offset_top = 25.0
+offset_right = 335.0
+offset_bottom = 63.0
+texture = ExtResource("15_yr2cx")
+script = ExtResource("2_3j8al")
+drop_to_origin = false

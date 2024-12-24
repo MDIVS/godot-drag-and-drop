@@ -11,10 +11,10 @@ config_version=5
 [application]
 
 config/name="Drag and Drop"
-run/main_scene="res://example.tscn"
+run/main_scene="res://demo.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/draggable_control/plugin.cfg", "res://addons/draggable_control_node/plugin.cfg")
+enabled=PackedStringArray("res://addons/draggable_control/plugin.cfg")
