@@ -6,7 +6,8 @@ _Made with [Godot Engine](https://godotengine.org) v4.3_
 
 ## Demo Preview
 Enjoy a demo where you can create your Kenney Monster as you want by dragging the monster parts to it.
-![Preview Image](./preview.png)
+![Editor Preview](./preview-editor.png)
+![Demo Preview](./preview-demo.png)
 
 ## Features
 
