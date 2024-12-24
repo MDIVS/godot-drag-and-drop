@@ -2,6 +2,8 @@
 
 A lightweight, reusable Godot script for creating draggable UI elements with ease. This addon is ideal for adding drag-and-drop functionality to your Godot projects.
 
+_Made with [Godot Engine](https://godotengine.org) v4.3_
+
 ## Features
 
 - **Drag-and-Drop Support:** Easily add drag-and-drop behavior to `Control` nodes.
