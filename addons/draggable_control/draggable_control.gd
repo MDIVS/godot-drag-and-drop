@@ -1,7 +1,7 @@
 extends Control
 
 ## Draggable item like a button
-class_name Draggable
+class_name DraggableControl
 
 ## Emmited right after dragging started
 signal dragged

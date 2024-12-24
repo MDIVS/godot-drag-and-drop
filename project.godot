@@ -14,3 +14,7 @@ config/name="Drag and Drop"
 run/main_scene="res://test.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/draggable_control/plugin.cfg", "res://addons/draggable_control_node/plugin.cfg")
